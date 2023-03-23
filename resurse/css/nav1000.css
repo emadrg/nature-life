@@ -1,0 +1,17 @@
+body{
+    --inaltime-meniu:45px;
+    --latime-buton:100px;    
+}
+
+#acasa-mediu{
+    display: block;
+}
+
+#acasa{
+    display:none;
+}
+
+
+#hamburger_menu{
+    display: none;
+}

@@ -1,0 +1,138 @@
+/* body{
+    display: block;
+} */
+
+header{
+    /* font-size: 125px;
+    position:absolute; */
+    /* text-align: center;
+    top:50%;
+    bottom:50%; */
+    page-break-after: always;
+    
+}
+
+header img {
+    display: none;
+}
+
+h1{
+    text-align: center;
+    line-height: 100vh;
+    width: 100%;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+#banner{
+    border: dashed black 4px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    justify-content: center;
+}
+
+.watermark{
+    display: block;
+    position: fixed;
+    opacity: 0.4;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border: solid black 3px;
+    border-radius: 15px;
+    width: 4cm;
+    height: 1cm;
+    right: 0;
+    bottom: 0;
+}
+
+#grid-pagina{
+    display: block;
+}
+
+nav {
+    display: none;
+}
+
+#info{
+    display: none;
+}
+
+#beneficii{
+    display: none;
+}
+
+#acasa-mediu{
+    display: none ;
+}
+
+ul.meniu, ul.meniu li div, ul.meniu li a, ul.meniu li, ul.meniu>li, ul.meniu ul {
+    all: unset ;
+}
+
+ul.meniu ul, ul.meniu li {
+    display: block ;
+    position: relative ;
+    left: 1cm ;
+}
+
+ul.meniu ul{
+    display: none;
+}
+
+footer {
+    page-break-before: always;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+video, iframe, figure, .taburi-iframe, .container-iframe, .link-top{
+    display: none;
+}
+
+a .link-top{
+    display: none;
+}
+
+@page{
+    size: A4 portrait;
+    margin-bottom: 2cm;
+    margin-top: 2cm;
+    counter-increment: page;
+}
+
+@page:left{
+    margin-left: 2.5cm;
+    margin-right: 0.5cm;
+}
+
+@page:right{
+    margin-right: 2.5cm;
+    margin-left: 0.5cm;
+}
+
+#imagini1, #imagini2{
+    display: none;
+}
+
+#grid-pagina{
+    display: block;
+}
+
+body{
+    display: block;
+}

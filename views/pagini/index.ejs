@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Magazin naturist</title>
+    <meta charset="UTF-8"><!-- codificarea în memorie a caracterelor-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- va fi explicat când ajungem la CSS -->
+    <meta name="keywords" content="plante, natura, remedii naturiste, uleiuri esențiale, bio, tratament, vegan">
+    <!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
+    <meta name="description" content="Magazin naturist. Produse naturale. Produse din plante.">
+    <!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
+
+  <%- include("../fragmente/head.ejs") %>
+
+
+
+</head>
+<body>
+    <%- include("../fragmente/header.ejs") %>
+<main>
+    <div id="grid-pagina">
+    <section id="welcome">
+        <h2>Noi vă oferim cea mai variata gama de produse naturiste</h2>
+        <p>Vă punem la dispoziție o gamă variată de <b>plante medicinale, uleiuri esențiale, gemuri și dulcețuri naturale sau produse fără zahăr</b>. La Nature Life veți găsi tot ce este mai bun din natură.</p>
+        <figure>
+            <picture id="imagini1">
+                <source media="(max-width: 600px)" srcset="./resurse/ico/imagine3.jpg">
+                <source media="(max-width: 1000px)" srcset="./resurse/ico/imagine4.jpg">
+                <img src="./resurse/ico/imagine1.jpg" alt="imagine" title="Fructe si legume">
+            </picture>
+            <figcaption>Fructe si legume</figcaption>
+        </figure>
+        <section id="produse-recomandate">
+            <h2>
+                Produsele cele mai îndrăgite din gama NatureLife
+            </h2>
+            <p>
+                <b>
+                    Produse provenite doar din materie primă organică, potrivite stilului de viață vegan și <i lang="en">low waste</i> <s>la preturi accesibile</s>.
+                </b>
+            </p>
+            <p>
+                    În fiecare săptămână, potrivit vânzărilor noastre și a preferințelor voastre, alegem cel mai iubit produs, pe care suntem bucuroși să vi-l prezentăm în detaliu.
+                 Săptămâna aceasta, cel mai îndrăgit produs a fost uleiul esențial de lavandă.
+            </p>
+            <p>
+                    Lavandula angustifolia-aceasta este denumirea îndrăgitei plante pe care o cunoaștem ca levănțică. Originară din zona Mediteranei, a Orientului Mijlociu și Indiei, ea a fost întrebuințată din cele mai vechi timpuri pentru multiplele ei proprietăți și beneficii. Egiptenii o foloseau la îmbălsămare, Cleopatra ca esență de parfum, regii și reginele Europei o aveau în grădinile palatelor. 
+                Supranumită și regina plantelor medicinale, lavanda a fost deschizătoare de drum și în ceea ce privește aroma terapia. Din vârfurile înflorite ale levănțicii se extrage, prin distilare, prețiosul ulei esențial de lavandă și, ca produs secundar, apa de lavandă (hidrolatul de lavandă).
+            </p>
+            <img src="./resurse/ico/imagine2.jpg" alt="imagine ulei" title="Imagine ulei" id="imagini2">
+        </section>
+        <section id="faq" class="intrebari">
+            <h2>Întrebări frecvente</h2>
+            <details>
+                <summary>Cum îmi pot crea un cont?</summary>
+                <p>Crearea unui cont este o procedură foarte simplă. Tot ce trebuie să faceți este să accesați secțiunea de creare de cont,
+                    introduceți emailul dumneavoastră și alegeți o parolă puternică, iar contul dumneavoastră este gata.
+                </p>
+            </details>
+            <details>
+                <summary>Cum efectuez un retur?</summary>
+                <p>În primul rând, este bine de știut că puteți face retur doar la produsele noi, sigilate, achiziționate în ultimele 30 de zile.
+                    Pentru efectuarea returului, descărcați formularul de retur de pe site, completați cu datele dumneavoastră, apoi trimiteți coletul cu produsele pe care doriți să le returnați,
+                    alături de formular, la adresa noastră
+                </p>
+            </details>
+            <details>
+                <summary>Cum pot obține un voucher?</summary>
+                <p>Voucherele pot fi obținute în urma efectuării mai multor comenzi ce depășesc o anumită sumă, sau la aniversarea dumneavoastră. </p>
+            </details>
+        </section>
+    
+    </section>
+  
+
+    <section id="anunturi">
+        <h2>Anunțuri</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sit ab saepe mollitia impedit placeat, veritatis cum dolores dolore a minima maiores iusto consequuntur sapiente, distinctio nam dignissimos, quibusdam ad!
+        </p>
+    </section>
+
+
+    <section id="retete">
+        <h2>Retete vegane</h2>
+            <h3>Rețete folosind produsele noastre:</h3>
+            <article>
+                <h4>
+                    Batoane de cereale cu fructe uscate, miere si seminte
+                </h4>
+                <p><q>Batoane de cereale cu fructe uscate, miere si seminte ideale pentru copii si adulti. Sunt o gustare sau un desert sanatos, delicios si energizant.
+
+                    Sa va povestesc putin despre aceasta reteta. E foarte usor de facut, se face rapid si ce e important sunt foarte sanatoase batoanele.
+                     Tot am cautat prin caietele mele cu retete si, in sfarsit, am gasit ceea ce am dorit de mult sa fac pentru nepoatele mele dragi.
+                      Acum sa termin cu vorbaria sa trecem la treaba.</q>
+                </p>
+                <p>Citește întreaga rețetă <a
+                        href="https://pofta-buna.com/batoane-de-cereale-cu-fructe-uscate-miere-si-seminte/"
+                        target="_blank">aici.</a></p>
+            </article>
+            <article>
+                <h4>
+                    Falafel
+                </h4>
+                <p><q>
+                    Pe lângă multe alte lucruri bune pe care globalizarea și internetul le-a adus în viața noastră, e faptul că aflăm mult mai ușor despre ingrediente și rețete de pe alte meleaguri pe care le adoptăm cu succes în bucătăriile noastre. Este și cazul chifteluțelor orientale din năut crud, numite falafel.
+                    
+                    
+                    Falafel
+                    
+                    Aceste chifteluțe atât de simple, făcute din doar câteva ingrediente sunt acum aproape la fel de iubite și la noi, cum sunt și în lumea arabă acolo unde își au originile. 
+                    
+                    La falafel nu se folosește năut fiert, ca în rețetele de hummus, ci năut crud pe care îl lăsăm la hidratat cel puțin 12 ore. Eu îl las de seara până dimineața sau invers, depinde când am de gând să prăjiesc chifteluțele.  
+                </q></p>
+                <p>
+                    Citește întreaga rețetă <a
+                    href="https://bucate-aromate.ro/2018/12/falafel/"
+                    target="_blank">aici.</a>
+                </p>
+            </article>
+            <section id="beneficii">
+                <h3>Beneficiile unui stil de viață sănătos; Știri din lumea NatureLife</h3> 
+                <div class="container-iframe">
+                    <div class="taburi-iframe">
+                        <a href="https://www.youtube.com/embed/xyQY8a-ng6g" title="YouTube video player" target="ifr-video">Cum ne afectează mâncarea corpul</a>
+                        <a href="https://www.youtube.com/embed/2kCOXLkbsKw" title="YouTube video player" target="ifr-video">Cum să începem să mâncăm sănătos</a>
+                        <a href="https://www.youtube.com/embed/srMxJX3HuqA" title="YouTube video player" target="ifr-video">Despre uleiul de cocos</a>
+                    </div>  
+                        <div class="iframe-video">
+                    <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/rhc_H6qiqQo"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </div>                        
+            </section>
+        </section>
+
+<section id="calendar">
+<h2>
+    Calendar de evenimente
+</h2>
+<p> Hic doloribus vero natus necessitatibus accusantium ipsum eum amet.</p>
+</section>
+
+<section id="tabel">
+    <h2>
+        Produse si distribuitori
+    </h2>
+    <p>
+        Pentru noi, cel mai important lucru este sa ne informam clientii. De aceea, va oferim cel mai useless tabel cu cele mai cumparate produse, pentru ca oricum veti cumpara ce vreti voi si nu are nico relevanta ce scriem noi aici
+    </p>
+    <div class="tabel_class">
+        <table>
+            <caption>
+                caption ok
+            </caption>
+        <thead>
+            <tr>
+              <th>Produse indragite</th>
+              <th>Nume produs</th>
+              <th>Distribuitor</th>
+              <th>Pret</th>
+              <th>Bucati cumparate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td rowspan="2">Produsele lunii</td>
+              <td>Ulei esential lavanda</td>
+              <td>Oil Bliss</td>
+              <td>15 lei</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>Ceai tei</td>
+              <td>Fares</td>
+              <td>15 lei</td>
+              <td>120</td>
+            </tr>
+            <tr>
+                <td>Produsul saptamanii</td>
+                <td>Dulceata capsuni</td>
+                <td>Naturalis</td>
+                <td>12 lei</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Produsul zilei</td>
+                <td>Crema fata</td>
+                <td>Gerovital</td>
+                <td>60 lei</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Produsul anului</td>
+                <td>Matcha</td>
+                <td>Naturalis</td>
+                <td>120 lei</td>
+                <td>600</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td> footer</td>
+                <td> footer</td>
+                <td> footer</td>
+                <td> footer</td>
+                <td> footer</td>
+            </tr>
+        </tfoot>
+          </table>
+    </div>
+</section>
+
+
+
+<section id="utilizatori-si-statistici">
+    <h2>
+        Utilizatori si statistici
+    </h2>
+    <p>
+         ex reprehenderit consequuntur voluptate quam aperiam corporis! Odit expedita saepe ratione itaque!
+    </p>
+</section>
+
+<section id="server">
+    <h2>
+        Site si server
+    </h2>
+    <p>
+        Quibusdam, aliquam dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque pariatur non sit consequuntur, hic nesciunt illum autem dolorem ad velit quod iste molestias. Impedit blanditiis quidem aut voluptatum quaerat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, consequatur, ab velit dicta consectetur provident eos tempora porro voluptatibus cupiditate possimus a animi harum iure laborum debi.
+    </p>
+    
+</section>
+
+<section id="utilizatori-online">
+    <h2> 
+        Utilizatori online
+    </h2>
+
+    <p>
+    aque, aspernatur facere maiores eos numquam id fugit similique voluptates explicabo, voluptate, temporibus in magnam molestias?
+    </p>
+</section>
+</div>
+</main>
+<div class="watermark">
+    <div>Dragonirescu</div>
+    <div>Emilia</div>
+</div>
+<%- include("../fragmente/footer.ejs") %>
+</body>
+</html>

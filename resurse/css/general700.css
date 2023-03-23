@@ -1,0 +1,22 @@
+html{
+    font-size:14px;
+}
+
+
+body{
+    --spatiere-pagina:8px;
+    --padding-sectiune:8px;
+}
+
+
+/* #grid-pagina {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:"z-welcome z-welcome z-welcome z-welcome"
+                        "z-retete z-retete z-retete z-retete"
+                        "z-calendar z-tabel z-tabel  z-anunturi"
+                        "z-utilizatori-online z-utilizatori-si-statistici z-server z-server";
+                        
+    gap:20px 10px;
+
+} */

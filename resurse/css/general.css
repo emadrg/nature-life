@@ -1,0 +1,222 @@
+
+html{
+    font-size:18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer > img{
+    float:inherit;
+    height: 18px;
+    width: 18px;
+}
+
+header > img {
+    float: left;
+    height: 65px;
+    width: 65px;
+    
+  }
+
+header {
+    overflow:auto;
+}
+
+header > h1{
+    position: relative;
+    float:left;
+    font-size: 65px;
+}
+
+body {
+    --culoare-fundal: #BDE073;
+    --culoare-border: green;
+    --culoare-text: black;
+    --spatiere-pagina: 30px;
+    --padding-sectiune:15px;
+    --culoare-fundal-inchis: #548A68;
+    --culoare-sectiuni:#F0B58D;
+    --galben: #fadc6e;
+    --bleu: #e1e2df;
+    --latime-buton:150px;
+    --inaltime-buton:70px;
+}
+body.dark{
+    --culoare-fundal: black;
+    --culoare-text: white;
+}
+body {
+    background-color: var(--culoare-fundal);
+    color: var(--culoare-text);
+    padding-left: var(--spatiere-pagina);
+    padding-right: var(--spatiere-pagina);
+    min-width: 450px;
+    margin:0;
+    
+
+}
+header h1{
+    text-align: center;
+}
+
+
+#grid-pagina {
+        border:3px var(--culoare-border);
+        padding: var(--padding-sectiune);
+    }
+
+#grid-pagina {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:"z-welcome z-welcome z-welcome z-welcome"
+                        "z-retete z-retete z-retete z-retete"
+                        "z-calendar z-tabel z-tabel  z-anunturi"
+                        "z-utilizatori-online z-utilizatori-si-statistici z-server z-server";
+                        
+    gap:20px 10px;
+
+}
+
+#grid-pagina > * {
+    border: 3px solid black ;
+    padding: var(--padding-sectiune);
+    background-color: var(--culoare-sectiuni);
+}
+#welcome{
+    grid-area: z-welcome;
+}
+#retete{
+    grid-area: z-retete;
+}
+#calendar{
+    grid-area: z-calendar;
+}
+
+#tabel{
+    grid-area: z-tabel;
+}
+
+#anunturi{
+    grid-area: z-anunturi;
+}
+
+#utilizatori-online{
+    grid-area: z-utilizatori-online;
+}
+
+#utilizatori-si-statistici{
+    grid-area: z-utilizatori-si-statistici;
+}
+
+#server{
+    grid-area: z-server;
+}
+
+
+ @media screen and (max-width:1200px){
+    body{
+        --culoare-fundal:#BDE073;
+    }
+ }
+ @media screen and (max-width:1000px){
+    body{
+        --culoare-fundal:#BDE073;
+    }
+ }
+ @media screen and (max-width:700px){
+    body{
+        --culoare-fundal:#BDE073;
+    }
+ }
+
+ img{
+    width:100%;
+    max-width:400px;
+ }
+
+main{
+    margin-top: 100px;
+}
+
+table{
+    border: 1px solid black;
+}
+
+   table, td {
+    border: 1px solid black;
+    /* border-right: 1px solid black;
+    border-left: 1px solid black; */
+    border-collapse:inherit;
+    caption-side: bottom;
+    background: var(--galben);
+  }
+
+  /* .tabel_class tr:hover{
+box-shadow: inset -3px 5px 15px 5px #000000;
+  } */
+
+  /* #tabel tr:nth-child(even) {
+    border-color: var(--culoare-fundal-inchis);
+}
+
+  #tabel tr:nth-child(odd) {
+    border-color:black;
+} */
+
+
+  th{
+    border: 3px solid;
+    background: white;
+  }
+
+  tfoot{
+    border: 3px solid;
+  }
+
+  .taburi-iframe {
+ display:flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ margin-right:none;
+  }
+
+  .container-iframe{
+    display: flex;
+    flex-direction: row;
+   align-items: flex-start;
+  }
+  
+  .iframe-video{
+    flex:1;
+    width:max-content;
+    height:max-content;
+}
+  .taburi-iframe a{
+  transition: all 1s linear;
+  background-color: var(--galben);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  } 
+
+  #beneficii a{
+    text-decoration: none;
+    display:table-cell;
+    vertical-align:middle;
+    width:var(--latime-buton);
+    height:var(--inaltime-buton);
+    background-color: var(--galben);
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid black;
+    transition: var(--bleu) 0.6s linear;
+}
+
+#beneficii a:hover{
+    background-color: var(--culoare-fundal-inchis);
+    border: 1px solid black;
+    transition: background-color 0.6s linear;
+    color: white;
+}
+
+#phone-logo{
+    width: 18px;
+}

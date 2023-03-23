@@ -1,0 +1,78 @@
+#hamburger, #ch-menu{
+    display:none;
+
+}
+
+body{
+    --inaltime-meniu:25px;
+    --latime-buton:150px;
+    --culoare-meniu: var(--culoare-fundal-inchis);
+    --culoare-border-button: black;
+}
+
+nav{
+    --text-meniu:black;
+    background-color: var(--culoare-meniu);
+    top:0;
+    width:clac(100vw-18px);
+    height:var(--inaltime-meniu);
+    position: sticky;
+
+}
+
+ul.meniu{
+    display: flex;
+    justify-content: center;
+    background-color: var(--culoare-meniu);
+    width: 100%;
+    height: var(--inaltime-meniu);
+}
+
+ul.meniu, ul.meniu ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+
+ul.meniu li{
+    width:var(--latime-buton);
+    height:var(--latime-meniu);
+    background-color: var (--culoare-meniu);
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid var(--culoare-border-button);
+    transition: background-color 0.8s linear;
+}
+
+ul.meniu li div, ul.meniu li a{
+    display:block;
+    width:100%;
+    height:100%;
+    color:var(--text-maniu);
+    text-decoration:none;
+    font-weight:bold;
+    line-height:var(--inaltime-meniu);
+
+
+}
+
+ul.menu ul{
+    opacity:0;
+    transition:all 0.8 s linear;
+    transform:scale(0,0);
+    transform-origin: center top; 
+}
+
+ul.meniu li:hover{
+    overflow: visible;
+    background-color: pink;  /*de setat cu variabila*/
+    opacity:1;
+    transform:scale(1,1);
+
+}
+
+#animatie_meniu{
+    animation-name: animatie_meniu;
+    animation-duration: 1s;
+}
