@@ -1,4 +1,15 @@
 @use '../../node_modules/bootstrap/scss/bootstrap.scss' with (
     $primary: red,
-    $secondary: purple
+    $secondary: purple,
+    $h1-font-size: 32px,
+$h2-font-size: 24px,
+$h3-font-size: 21px,
+$accordion-border-radius: 5px,
+$container-max-widths:(
+  sm:500px,
+  md:700px,
+  lg:1000px,
+),
+$link-hover-color: 299E8C,
+$font-family-sans-serif: system-ui
 )

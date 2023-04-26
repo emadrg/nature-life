@@ -250,12 +250,7 @@
 </main>
 
 <div id="grid-galerie">
-    <% for (let imag of locals.imagini) { 
-        d=new Date();
-        var v_luni=["ianuarie", "februarie", "martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
-        if (imag.luni && imag.luni.includes(v_luni[d.getMonth()])) {
-
-       %>
+    <% for (let imag of locals.imagini) { %>
             <figure>
                 <picture>
                     <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
@@ -263,10 +258,8 @@
                 </picture>
                 <figcaption><%- imag.descriere %></figcaption>
             </figure>
+            <%}%>
 
-
-         <% }  %>
-    <% }  %>
 </div>
 
 

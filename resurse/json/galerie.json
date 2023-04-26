@@ -4,7 +4,7 @@
 		{
 			"fisier":"briose-frisca.png",
 			"descriere":"Brioșe",
-			"luni":["martie","februarie","noiembrie", "aprilie"]
+			"timp":["martie","februarie","noiembrie", "aprilie"]
 		},
 		{
 			"fisier":"clatite.png",
