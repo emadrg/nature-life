@@ -220,3 +220,36 @@ box-shadow: inset -3px 5px 15px 5px #000000;
 #phone-logo{
     width: 18px;
 }
+
+main a.link_articol{
+    background-position: center;
+    background-size: 0;
+    background-repeat: no-repeat;
+
+}
+
+main a.link_articol:hover{
+    background-size: 100%;
+    color:green;
+    background-image: radial-gradient(var(--bleu) 40%, transparent 80%, transparent 100%);
+    transition: all 1s linear;
+}
+
+main a.link_articol:active{
+    border: 1px solid black;
+    transition: all 0.5s linear;
+}
+
+main a.link_articol[href^="http"]::before{
+    content:⮳;
+    font-size: 1.5rem;
+}
+
+main a.link_articol[href^="http"]:hover::before{
+    color: black;
+    transition: color 0.35s linear;
+}
+
+video{
+    width: 100%;
+}

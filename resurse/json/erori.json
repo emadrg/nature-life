@@ -43,6 +43,14 @@
             "titlu":"Date gresit",
             "text": "Verificati datele",
             "imagine":"interzis.png"
+        },
+
+        {
+            "identificator":400,
+            "status":true,
+            "titlu":"400-Bad request",
+            "text": "Cerere gresita",
+            "imagine":"interzis.png"
         }
     ]
 }

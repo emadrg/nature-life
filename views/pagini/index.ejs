@@ -20,6 +20,7 @@
     <div id="grid-pagina">
     <section id="welcome">
         <h2>Noi vă oferim cea mai variata gama de produse naturiste</h2>
+        <button class="btn btn-primary">ceva</button>
         <p>Vă punem la dispoziție o gamă variată de <b>plante medicinale, uleiuri esențiale, gemuri și dulcețuri naturale sau produse fără zahăr</b>. La Nature Life veți găsi tot ce este mai bun din natură.</p>
         <figure>
             <picture id="imagini1">
@@ -47,6 +48,7 @@
                 Supranumită și regina plantelor medicinale, lavanda a fost deschizătoare de drum și în ceea ce privește aroma terapia. Din vârfurile înflorite ale levănțicii se extrage, prin distilare, prețiosul ulei esențial de lavandă și, ca produs secundar, apa de lavandă (hidrolatul de lavandă).
             </p>
             <img src="./resurse/ico/imagine2.jpg" alt="imagine ulei" title="Imagine ulei" id="imagini2">
+            <a class="link_articol" href="https://www.verywellmind.com/lavender-for-less-anxiety-3571767"> Cititi mai multe despre lavanda aici</a>
         </section>
         <section id="faq" class="intrebari">
             <h2>Întrebări frecvente</h2>
@@ -75,8 +77,12 @@
     <section id="anunturi">
         <h2>Anunțuri</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sit ab saepe mollitia impedit placeat, veritatis cum dolores dolore a minima maiores iusto consequuntur sapiente, distinctio nam dignissimos, quibusdam ad!
+          Inscrieti-va la cursul nostru online gratuit de yoga!
         </p>
+        <video controls="controls" preload="none" poster="/resurse/ico/imagine_yoga.jpg">
+            <source src="/resurse/video/Ao_Nang_Beach_Yoga_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS.mp4" type="video/mp4"> 
+            <source src="/resurse/video/Ao_Nang_Beach_Yoga_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS.ogv" type="video/ogv">
+        </video>
     </section>
 
 
@@ -242,8 +248,30 @@
 </section>
 </div>
 </main>
+
+<div id="grid-galerie">
+    <% for (let imag of locals.imagini) { 
+        d=new Date();
+        var v_luni=["ianuarie", "februarie", "martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+        if (imag.luni && imag.luni.includes(v_luni[d.getMonth()])) {
+
+       %>
+            <figure>
+                <picture>
+                    <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
+                    <img src="<%- imag.fisier %>" alt="imagine">
+                </picture>
+                <figcaption><%- imag.descriere %></figcaption>
+            </figure>
+
+
+         <% }  %>
+    <% }  %>
+</div>
+
+
 <div class="watermark">
-    <div>Dragonirescu</div>
+    <div>Dragomirescu</div>
     <div>Emilia</div>
 </div>
 <%- include("../fragmente/footer.ejs") %>
